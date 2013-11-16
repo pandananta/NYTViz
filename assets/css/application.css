@@ -2,10 +2,14 @@
 	margin: 0 auto;
 	text-align: center;
 	height:650px;
-	padding-top: 120px;
+	padding-top: 100px;
 }
 
 #quiz{
 	width:500px;
 	height:50px;
+}
+
+#imggrph{
+	height:320px;
 }
