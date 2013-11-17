@@ -13,3 +13,12 @@
 #imggrph{
 	height:320px;
 }
+
+iframe{
+	width: 500px;
+	height:300px;
+	border-top: #c00 0px dotted;
+  border-right: #c00 0px dotted;
+  border-left: #c00 0px dotted;
+  border-bottom: #c00 0px dotted;
+}

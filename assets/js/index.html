@@ -4,6 +4,7 @@
 
 body {
   font: 10px sans-serif;
+  height:100px;
 }
 
 .axis path,
@@ -29,8 +30,8 @@ body {
 <script>
 
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    width = 480 - margin.left - margin.right,
+    height = 250 - margin.top - margin.bottom;
 
 var parseDate = d3.time.format("%d-%b-%y").parse;
 
@@ -90,6 +91,8 @@ d3.tsv("data.tsv", function(error, data) {
 
 </script>
 
+
+</body>
 
 
 
