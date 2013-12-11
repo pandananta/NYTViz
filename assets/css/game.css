@@ -7,7 +7,7 @@ body{
 
 }
 
-h1{color: purple;}
+h1{color: grey;}
 h2{font-size: 50px;}
 
 #increase{color:green;}
@@ -15,6 +15,8 @@ h2{font-size: 50px;}
 #neutral{color:grey;}
 #orange{color:orange;}
 #fuchsia{color:fuchsia;}
+#green{color:green;}
+#red{color:red;}
 
 a:hover{text-decoration: none;}
 
@@ -32,13 +34,29 @@ a:hover{text-decoration: none;}
 	padding-top:50px;
 }
 
+.accordion-inner{
+	text-align:center;
+}
+.acc-description{
+	margin:auto;
+	width:850px;
+	font-size:20px;
+	color:orange;
+	text-align: left;
+
+}
+
+.acc-graph{
+
+}
+
 iframe{
 	width: 500px;
 	height:300px;
 	border-top: #c00 0px dotted;
-  border-right: #c00 0px dotted;
-  border-left: #c00 0px dotted;
-  border-bottom: #c00 0px dotted;
+  	border-right: #c00 0px dotted;
+  	border-left: #c00 0px dotted;
+  	border-bottom: #c00 0px dotted;
 }
 
 .btn{
