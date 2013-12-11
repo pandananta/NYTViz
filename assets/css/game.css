@@ -2,6 +2,15 @@
 	text-align: center;
 }
 
+iframe{
+	width: 500px;
+	height:300px;
+	border-top: #c00 0px dotted;
+  border-right: #c00 0px dotted;
+  border-left: #c00 0px dotted;
+  border-bottom: #c00 0px dotted;
+}
+
 .btn{
 	margin-left:5px;
 	margin-right:5px;
@@ -20,10 +29,11 @@
 }
 
 #game-box{
-	margin-top:20px;
+	margin-top:30px;
 	padding-top:20px;
 	padding-bottom:20px;
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	background-color: white;
 }

@@ -11,18 +11,20 @@
   <body>
    <div class="container-narrow">
     <div class="jumbotron">
-      <div id="outer"><h2>Can you guess when these NYT articles were written based on their headline?</h2></div> 
+      <div id="outer"><h2>Can You Guess When These NYT Articles Were Written Based on Their Headlines?</h2></div> 
       <div id="game-box" class="container">
-      <div id="viz"></div>
-      <div>
-        <button id="next" onClick="generateRandomTitle()" class="btn btn-large btn-success">NEXT</button>
-        <br>
-        <button id="1980" onClick="checkAnswer(8)" class="btn btn-large btn-success decade-btns">The '80s</button>
-        <button id="1990" onClick="checkAnswer(9)" class="btn btn-large btn-success decade-btns">The '90s</button>
-        <button id="2000" onClick="checkAnswer(0)" class="btn btn-large btn-success decade-btns">The '00s</button>
-      </div>
+        <div id="viz"></div>
+        <div>
+          <button id="next" onClick="generateRandomTitle()" class="btn btn-large btn-success">NEXT</button>
+          <br>
+          <button id="1980" onClick="checkAnswer(8)" class="btn btn-large btn-success decade-btns">The '80s</button>
+          <button id="1990" onClick="checkAnswer(9)" class="btn btn-large btn-success decade-btns">The '90s</button>
+          <button id="2000" onClick="checkAnswer(0)" class="btn btn-large btn-success decade-btns">The '00s</button>
+        </div>
       </div>
      </div>
+     <h1>Since 1981, title length of articles has been on the rise.</h1>
+     <iframe scrolling ="no" src="assets/js/index.html"></iframe>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
