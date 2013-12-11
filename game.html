@@ -6,16 +6,23 @@
     <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" >
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" >
      <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+    <link href="assets/css/game.css" rel="stylesheet" type="text/css" >
   </head>
   <body>
    <div class="container-narrow">
     <div class="jumbotron">
-      <div id="outer"><h1>Can you guess the decade when these NYT titles were written?</h1></div>      
-      <button id="1980" onClick="checkAnswer(8)" class="btn btn-large btn-success">The '80s</button>
-      <button id="1990" onClick="checkAnswer(9)" class="btn btn-large btn-success">The '90s</button>
-      <button id="2000" onClick="checkAnswer(0)" class="btn btn-large btn-success">The '00s</button>
+      <div id="outer"><h2>Can you guess when these NYT articles were written based on their headline?</h2></div> 
+      <div id="game-box" class="container">
       <div id="viz"></div>
+      <div>
+        <button id="next" onClick="generateRandomTitle()" class="btn btn-large btn-success">NEXT</button>
+        <br>
+        <button id="1980" onClick="checkAnswer(8)" class="btn btn-large btn-success decade-btns">The '80s</button>
+        <button id="1990" onClick="checkAnswer(9)" class="btn btn-large btn-success decade-btns">The '90s</button>
+        <button id="2000" onClick="checkAnswer(0)" class="btn btn-large btn-success decade-btns">The '00s</button>
       </div>
+      </div>
+     </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>

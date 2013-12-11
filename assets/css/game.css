@@ -1,0 +1,29 @@
+.jumbotron{
+	text-align: center;
+}
+
+.btn{
+	margin-left:5px;
+	margin-right:5px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#next{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#title{
+	font-size: 30px;
+
+}
+
+#game-box{
+	margin-top:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}

@@ -1,15 +1,24 @@
 var cur;
 var decade;
 var year;
+var title;
+
+$(document).ready(function() 
+ {
+ 	generateRandomTitle();
+ });
+
 
 function checkAnswer(answer){
+	$(".decade-btns").css({ "display": "none"})
+	$("#next").css({ "display": "inline"})
+
 	if(answer==decade){
 		correct();
 	}
 	else{
 		incorrect();
 	}
-	generateRandomTitle();
 }
 
 function generateRandomTitle(){
@@ -18,8 +27,12 @@ function generateRandomTitle(){
 	var datestr = cur["date"].toString();
 	decade = datestr.charAt(2);
 	year = datestr.substring(0,4);
-	console.log("Title : "+ toTitleCase(cur["title"]));
+	title = toTitleCase(cur["title"]);
+	console.log("Title : "+ title);
 	console.log("Decade: "+decade);
+    $("div#viz").html("<p id=\"title\">\""+title+"\"</p>");
+	$(".decade-btns").css({ "display": "inline"})
+	$("#next").css({ "display": "none"})
 }
 
 function toTitleCase(str)
@@ -29,12 +42,13 @@ function toTitleCase(str)
 
 function correct(){
 	console.log("correct "+year);
+	$("div#viz").append("<p>CORRECT: This article was written in "+year+".</p>");
 
 }
 
 function incorrect(){
 	console.log("incorrect "+year);
-
+	$("div#viz").append("<p>INCORRECT: This article was written in "+year+".</p>");
 }
 
 var titles = [
