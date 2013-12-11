@@ -2,8 +2,20 @@ html{height:100%}
 
 body{
 	height: 100%;
+	background-color:black;
+	text-align: center;
 
 }
+
+h1{color: purple;}
+h2{font-size: 50px;}
+
+#increase{color:green;}
+#decrease{color:red;}
+#neutral{color:grey;}
+#orange{color:orange;}
+
+a:hover{text-decoration: none;}
 
 .container-narrow{
 	height:100%;
@@ -11,6 +23,7 @@ body{
 
 .jumbotron{
 	text-align: center;
+	background-color: black;
 	height:100%;
 }
 
@@ -32,6 +45,10 @@ iframe{
 	margin-right:5px;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.accordion-toggle{
+text-align: center;
 }
 
 #next{
