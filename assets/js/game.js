@@ -42,13 +42,13 @@ function toTitleCase(str)
 
 function correct(){
 	console.log("correct "+year);
-	$("div#viz").append("<p><span id=\"green\">CORRECT:</span> This article was written in "+year+".</p>");
+	$("div#viz").append("<p><span id=\"orange\">CORRECT:</span> This article was written in "+year+".</p>");
 
 }
 
 function incorrect(){
 	console.log("incorrect "+year);
-	$("div#viz").append("<p><span id=\"red\">INCORRECT:</span> This article was written in "+year+".</p>");
+	$("div#viz").append("<p><span id=\"orange\">INCORRECT:</span> This article was written in "+year+".</p>");
 }
 
 var titles = [
