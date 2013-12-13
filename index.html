@@ -8,15 +8,120 @@
      <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
     <link href="assets/css/application.css" rel="stylesheet" type="text/css" >
   </head>
-  <body>
+   <body>
     <div class="container-narrow">
-    <div class="jumbotron"
-      <div id="outer"><h1>Some people think that YouTube, Twitter, & the Microwave are making our attention spans rly, rly small. </h1></div>    
-      <div id="viz"></div>
+    <div class="container">
+       <br>
+       <h1>We analyzed 3,000+ New York Times titles to see how they evolved over three decades. This is what we found. </h1>
+    </div>
+        <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                  <h2>The number of words is <span id="increase">increasing</span>.</h2>
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <span>
+                    <div class="acc-description">
+                      <p>We measured the average number of space dilineated words in a title for 10 articles every month over a span of 27 years. The graph below shows fluctuations from year-to-year, with a clear upward trend.</p>
+                    </div>
+                  </span>
+                  <span class="acc-graph"><iframe scrolling ="no" src="assets/graphs/index.html"></iframe></span>
+                  <span>
+                    <div class="acc-description">
+                      <p>If this surprises you, you are not alone. A whopping 48% or the young adults we surveyed thought that titles were actually getting shorter over time.</p>
+                    </div>
+                  </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                  <h2>But the number of syllables is <span id="neutral">consistent</span>.</h2>
+              </a>
+            </div>
+            <div id="collapseThree" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <span>
+                    <div class="acc-description">
+                      <p>While the number of words per titles is increasing, the number of syllables per word has stayed relatively consistent over time.</p>
+                    </div>
+                  </span>
+                  <span class="acc-graph"><iframe scrolling ="no" src="assets/graphs/index2.html"></iframe></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                  <h2>Difficulty of title comprehension is <span id="decrease">decreasing</span>.</h2>
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <span>
+                    <div class="acc-description">
+                      <p>We measured the Gunning Fog Index (GFI) of our titles sample for every year. Gunning Fog is a measure readability, estimating how many years of American education you would need in order to comprehend a passage of text. As you can see below, you probably need to complete 8th grade before you could understand a title in 1984. But titles in 2006 were accesisible to 5th graders.</p>
+                    </div>
+                  </span>
+                  <span class="acc-graph"><iframe scrolling ="no" src="assets/graphs/index1.html"></iframe></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                <h2>And the density of meaningful words is <span id="decrease">decreasing</span>.</h2>                 
+              </a>
+            </div>
+            <div id="collapseFour" class="accordion-body collapse">
+              <div class="accordion-inner">
+                  <span>
+                    <div class="acc-description">
+                      <p>Finally, we measured the lexical density of titles by year and found it was also decreasing. Lexical density is a measure of content per functional and lexical unit. A low lexical density may signify a high ratio of fluff or stop words. A high lexical density indicates a high density of nouns, adjectives, verbs, and adverbs.</p>
+                    </div>
+                  </span>
+                  <span class="acc-graph"><iframe scrolling ="no" src="assets/graphs/index3.html"></iframe></span>
+                  <span>
+                    <div class="acc-description">
+                      <p>This will not come as a surprise to most. 78% of respondants thought that news articles were becoming easier to read and less complicated over time. </p>
+                    </div>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <h1>These trends in conjunction suggest that title language is getting simpler over time.</h1>
+
+    <div class="jumbotron">
+      <div id="j-content">
+        <h2 id="neutral">See for yourself. Can You Guess When These NYT Headlines Were Written?</h2>
+        <div id="game-box" class="container">
+          <div id="viz"></div>
+          <div>
+            <button id="next" onClick="generateRandomTitle()" class="btn btn-large btn-success">NEXT</button>
+            <br>
+            <button id="1980" onClick="checkAnswer(8)" class="btn btn-large btn-success decade-btns">The '80s</button>
+            <button id="1990" onClick="checkAnswer(9)" class="btn btn-large btn-success decade-btns">The '90s</button>
+            <button id="2000" onClick="checkAnswer(0)" class="btn btn-large btn-success decade-btns">The '00s</button>
+          </div>
+        </div>
       </div>
+    </div>
+    <p>By Ananta Pandey and Judith Mueller</p>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/application.js"></script>
   </body>
 </html>

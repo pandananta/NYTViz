@@ -1,24 +1,91 @@
-#outer{
-	margin: 0 auto;
+html{height:100%}
+
+body{
+	height: 100%;
+	background-color:black;
 	text-align: center;
-	height:650px;
-	padding-top: 100px;
+
 }
 
-#quiz{
-	width:500px;
-	height:50px;
+h1{color: grey;}
+h2{font-size: 50px;}
+
+#increase{color:green;}
+#decrease{color:red;}
+#neutral{color:grey;}
+#orange{color:orange;}
+#fuchsia{color:fuchsia;}
+#green{color:green;}
+#red{color:red;}
+
+a:hover{text-decoration: none;}
+
+.container-narrow{
+	height:100%;
 }
 
-#imggrph{
-	height:320px;
+.jumbotron{
+	text-align: center;
+	background-color: black;
+	height:100%;
+}
+
+#j-content{
+	padding-top:50px;
+}
+
+.accordion-inner{
+	text-align:center;
+}
+.acc-description{
+	margin:auto;
+	width:850px;
+	font-size:20px;
+	color:orange;
+	text-align: left;
+
+}
+
+.acc-graph{
+
 }
 
 iframe{
 	width: 500px;
 	height:300px;
 	border-top: #c00 0px dotted;
-  border-right: #c00 0px dotted;
-  border-left: #c00 0px dotted;
-  border-bottom: #c00 0px dotted;
+  	border-right: #c00 0px dotted;
+  	border-left: #c00 0px dotted;
+  	border-bottom: #c00 0px dotted;
+}
+
+.btn{
+	margin-left:5px;
+	margin-right:5px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.accordion-toggle{
+text-align: center;
+}
+
+#next{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#title{
+	font-size: 30px;
+
+}
+
+#game-box{
+	margin-top:30px;
+	padding-top:70px;
+	padding-bottom:50px;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	background-color: steelblue;
 }
